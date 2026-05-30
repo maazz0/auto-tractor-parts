@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farmer Guides: Tractor Repair & Maintenance | Naeem Auto Vehari</title>
+<meta name="description" content="Free Urdu & English guides on tractor overheating, engine oil selection, hydraulic repair, clutch replacement & seasonal maintenance. Expert advice from Naeem Auto, Vehari since 2002.">
+<link rel="icon" type="image/png" href="favicon.png">
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#F5F5F7;--surface:#FFFFFF;--text-primary:#1D1D1F;--text-secondary:#86868B;--accent:#0071E3;--accent-hover:#0077ED;--green:#34C759;--green-hover:#30B350;--divider:#D2D2D7;--shadow-card:0 4px 16px rgba(0,0,0,0.08);--shadow-card-hover:0 8px 32px rgba(0,0,0,0.12);--radius-card:18px;--radius-pill:50px;--font-system:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--font-urdu:"Noto Nastaliq Urdu","Jameel Noori Nastaleeq",serif}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-system);background:var(--bg);color:var(--text-primary);font-size:17px;line-height:1.5;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+button{cursor:pointer;border:none;background:none;font-family:inherit}
+img{max-width:100%;display:block}
+ul{list-style:none}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+
+/* Header */
+.header{position:fixed;top:0;left:0;right:0;z-index:1000;padding:16px 0;background:rgba(245,245,247,0.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);box-shadow:0 1px 0 var(--divider)}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.header-logo{font-size:15px;font-weight:600;letter-spacing:-0.01em}
+.header-logo span{color:var(--accent)}
+.header-nav{display:flex;gap:28px;align-items:center}
+.header-nav a{font-size:13px;color:var(--text-secondary);font-weight:500;transition:color 0.2s}
+.header-nav a:hover{color:var(--text-primary)}
+.header-cta{background:var(--accent);color:#fff !important;padding:8px 20px;border-radius:var(--radius-pill);font-size:13px !important;font-weight:600}
+.mobile-menu-btn{display:none;flex-direction:column;gap:5px;padding:8px;min-width:44px;min-height:44px;align-items:center;justify-content:center}
+.mobile-menu-btn span{display:block;width:22px;height:1.5px;background:var(--text-primary);border-radius:1px}
+
+/* Mobile Nav */
+.mobile-nav{display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(245,245,247,0.98);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);z-index:2000;flex-direction:column;justify-content:center;align-items:center;gap:28px}
+.mobile-nav.open{display:flex}
+.mobile-nav a{font-size:28px;font-weight:600;color:var(--text-primary);letter-spacing:-0.02em}
+.mobile-nav-close{position:absolute;top:20px;right:24px;font-size:32px;color:var(--text-secondary);padding:8px;min-width:44px;min-height:44px;display:flex;align-items:center;justify-content:center}
+
+/* Hero */
+.kb-hero{padding:140px 0 60px;text-align:center;background:var(--bg)}
+.back-link{display:inline-flex;align-items:center;gap:6px;font-size:15px;color:var(--accent);font-weight:600;margin-bottom:24px;transition:gap 0.2s}
+.back-link:hover{gap:10px}
+.section-label{font-size:14px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:12px}
+.section-title{font-size:clamp(32px,5vw,56px);font-weight:700;letter-spacing:-0.03em;line-height:1.1;color:var(--text-primary);margin-bottom:16px}
+.section-subtitle{font-size:19px;color:var(--text-secondary);line-height:1.5;max-width:640px;margin:16px auto 0}
+
+/* Guide Grid */
+.guides-grid{padding:40px 0 120px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.guide-card{background:var(--surface);border-radius:var(--radius-card);padding:36px 28px;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;box-shadow:var(--shadow-card)}
+.guide-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-card-hover)}
+.guide-icon{font-size:40px;margin-bottom:20px}
+.guide-tag{font-size:12px;font-weight:600;color:var(--accent);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:10px}
+.guide-card h3{font-size:22px;font-weight:700;letter-spacing:-0.02em;margin-bottom:12px;line-height:1.25}
+.guide-card p{font-size:15px;color:var(--text-secondary);line-height:1.55;margin-bottom:20px;flex-grow:1}
+.guide-meta{font-size:12px;color:var(--text-secondary);margin-bottom:16px;display:flex;gap:16px}
+.guide-cta{display:inline-flex;align-items:center;gap:6px;font-size:15px;font-weight:600;color:var(--accent);transition:gap 0.2s}
+.guide-cta:hover{gap:10px}
+
+/* CTA Banner */
+.cta-banner{background:var(--text-primary);color:#fff;border-radius:var(--radius-card);padding:56px 48px;text-align:center;margin:0 auto 120px;max-width:1152px}
+.cta-banner h3{font-size:28px;font-weight:700;margin-bottom:12px;letter-spacing:-0.02em}
+.cta-banner p{font-size:16px;color:rgba(255,255,255,0.7);margin-bottom:28px}
+.cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 28px;border-radius:var(--radius-pill);font-size:16px;font-weight:600;min-height:52px;transition:transform 0.2s}
+.btn:hover{transform:scale(1.02)}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-secondary{background:var(--green);color:#fff}
+
+/* Footer */
+.footer{background:var(--text-primary);color:rgba(255,255,255,0.6);padding:48px 0 32px;text-align:center}
+.footer-brand{font-size:18px;font-weight:700;color:#fff;margin-bottom:8px}
+.footer p{font-size:13px;margin-bottom:4px}
+.footer a{color:rgba(255,255,255,0.8)}
+.footer-divider{width:40px;height:1px;background:rgba(255,255,255,0.2);margin:24px auto}
+
+/* FAB */
+.fab-container{position:fixed;bottom:20px;right:20px;z-index:950;display:flex;flex-direction:column;gap:12px}
+.fab-whatsapp{width:56px;height:56px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 4px 16px rgba(52,199,89,0.35);animation:fabPulse 2s ease-in-out infinite}
+.fab-call{width:48px;height:48px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:0 4px 14px rgba(0,113,227,0.3)}
+@keyframes fabPulse{0%,100%{box-shadow:0 4px 16px rgba(52,199,89,0.35)}50%{box-shadow:0 4px 24px rgba(52,199,89,0.55)}}
+
+@media (max-width:900px){.guides-grid{grid-template-columns:1fr}}
+@media (max-width:768px){
+  .header-nav{display:none}
+  .mobile-menu-btn{display:flex}
+  .kb-hero{padding:110px 0 40px}
+  .cta-banner{padding:40px 24px;margin:0 16px 80px}
+  .guides-grid{padding:20px 0 80px;gap:16px}
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">Naeem<span>Auto</span></a>
+      <nav class="header-nav">
+        <a href="index.html#craft">Our Craft</a>
+        <a href="index.html#parts">Parts</a>
+        <a href="index.html#workshop">Workshop</a>
+        <a href="knowledge-base.html" style="color:var(--text-primary)">Guides</a>
+        <a href="index.html#trust">Stories</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="tel:03085962268" class="header-cta">📞 Call</a>
+      </nav>
+      <button class="mobile-menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" id="menuClose" aria-label="Close menu">✕</button>
+  <a href="index.html" class="mobile-nav-link">Home</a>
+  <a href="index.html#craft" class="mobile-nav-link">Our Craft</a>
+  <a href="index.html#parts" class="mobile-nav-link">Parts</a>
+  <a href="index.html#workshop" class="mobile-nav-link">Workshop</a>
+  <a href="knowledge-base.html" class="mobile-nav-link" style="color:var(--accent)">Guides</a>
+  <a href="index.html#contact" class="mobile-nav-link">Contact</a>
+  <a href="tel:03085962268" class="btn btn-primary" style="margin-top:20px;">📞 Call Now</a>
+</nav>
+
+<section class="kb-hero">
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to Home</a>
+    <p class="section-label">Knowledge Base</p>
+    <h1 class="section-title">Farmer Guides.</h1>
+    <p class="section-subtitle">Free expert advice to keep your tractor running longer. Written by mechanics who have spent 25+ years in the workshop—not by marketers.</p>
+  </div>
+</section>
+
+<div class="container">
+  <div class="guides-grid">
+
+    <a href="guides/overheating.html" class="guide-card">
+      <div class="guide-icon">🔥</div>
+      <span class="guide-tag">Summer Essential</span>
+      <h3>Tractor Overheating: Complete Fix Guide</h3>
+      <p>MF 285 & 385 radiator, water pump, thermostat diagnosis. 5 warning signs you must not ignore before the engine seizes.</p>
+      <div class="guide-meta"><span>⏱ 8 min read</span><span>🔧 DIY + Workshop</span></div>
+      <span class="guide-cta">Read Guide →</span>
+    </a>
+
+    <a href="guides/oil-comparison.html" class="guide-card">
+      <div class="guide-icon">🛢️</div>
+      <span class="guide-tag">Most Popular</span>
+      <h3>Shell Rimula vs Delo vs Al Ghazi Oil</h3>
+      <p>Honest comparison + how to spot fake oil in Pakistan. Updated 2026 prices for 5L and 20L drums. Protect your engine.</p>
+      <div class="guide-meta"><span>⏱ 6 min read</span><span>💰 Price Guide</span></div>
+      <span class="guide-cta">Read Guide →</span>
+    </a>
+
+    <a href="guides/hydraulic-repair.html" class="guide-card">
+      <div class="guide-icon">⚙️</div>
+      <span class="guide-tag">Repair Costs</span>
+      <h3>Weak Hydraulic Lift? Diagnosis & Repair</h3>
+      <p>Lift slow, load dropping, pump whining? Complete troubleshooting guide with transparent workshop cost ranges.</p>
+      <div class="guide-meta"><span>⏱ 10 min read</span><span>📊 Cost Breakdown</span></div>
+      <span class="guide-cta">Read Guide →</span>
+    </a>
+
+    <a href="guides/clutch-guide.html" class="guide-card">
+      <div class="guide-icon">🔩</div>
+      <span class="guide-tag">Transmission</span>
+      <h3>Clutch Slipping? When to Replace</h3>
+      <p>Warning signs, OEM vs aftermarket clutch plates, and honest replacement cost guide for MF & Al Ghazi tractors.</p>
+      <div class="guide-meta"><span>⏱ 7 min read</span><span>🔍 Diagnosis</span></div>
+      <span class="guide-cta">Read Guide →</span>
+    </a>
+
+    <a href="guides/seasonal-checklist.html" class="guide-card">
+      <div class="guide-icon">🌾</div>
+      <span class="guide-tag">Seasonal</span>
+      <h3>Wheat Harvest & Rice Sowing Prep Checklist</h3>
+      <p>Complete 25-point pre-season maintenance checklist. Avoid mid-field breakdowns during peak farming weeks.</p>
+      <div class="guide-meta"><span>⏱ 5 min read</span><span>📋 Printable</span></div>
+      <span class="guide-cta">Read Guide →</span>
+    </a>
+
+    <a href="guides/battery-guide.html" class="guide-card">
+      <div class="guide-icon">🔋</div>
+      <span class="guide-tag">Electrical</span>
+      <h3>Tractor Battery: Selection & Care Guide</h3>
+      <p>AGS vs Osaka vs Phoenix batteries. How to extend battery life to 3+ years in Punjab's harsh summer heat.</p>
+      <div class="guide-meta"><span>⏱ 6 min read</span><span>⚡ Electrical</span></div>
+      <span class="guide-cta">Read Guide →</span>
+    </a>
+
+  </div>
+</div>
+
+<div class="cta-banner">
+  <h3>Can't find your answer?</h3>
+  <p>WhatsApp us a photo of your problem. We reply within 1 hour during working hours.</p>
+  <div class="cta-row">
+    <a href="tel:03085962268" class="btn btn-primary">📞 Call 0308-5962268</a>
+    <a href="https://wa.me/923085962268?text=Assalam-o-Alaikum%2C%20I%20have%20a%20tractor%20problem.%20Please%20help." class="btn btn-secondary" target="_blank" rel="noopener">💬 WhatsApp Now</a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="footer-brand">Naeem Auto Tractor Parts</p>
+    <p>Old Bus Stand, Multan Road, Vehari (near Makki Masjid)</p>
+    <p>📞 <a href="tel:03085962268">0308-5962268</a> · 💬 <a href="https://wa.me/923085962268" target="_blank" rel="noopener">0308-5962268</a></p>
+    <p>Monday–Sunday, 8:00 AM – 10:00 PM</p>
+    <div class="footer-divider"></div>
+    <p>© 2002–2026 Naeem Auto Tractor Parts. All rights reserved.</p>
+  </div>
+</footer>
+
+<div class="fab-container">
+  <a href="tel:03085962268" class="fab-call" aria-label="Call">📞</a>
+  <a href="https://wa.me/923085962268?text=Assalam-o-Alaikum%2C%20I%20saw%20your%20website%20and%20need%20tractor%20parts%20from%20Naeem%20Auto.%20Please%20share%20details." class="fab-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+</div>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  const menuClose = document.getElementById('menuClose');
+  const mobileLinks = mobileNav.querySelectorAll('a');
+
+  menuBtn.addEventListener('click', () => {
+    mobileNav.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+
+  menuClose.addEventListener('click', () => {
+    mobileNav.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileNav.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  });
+</script>
+
+</body>
+</html>
