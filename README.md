@@ -2,7 +2,7 @@
 
 A fast, mobile-first landing page for **Naeem Auto Tractor Parts**, a genuine tractor parts dealer and repair workshop based at Old Bus Stand, Multan Road, Vehari, Punjab, Pakistan.
 
-🔗 **Live Site:** [https://maazz0.github.io/auto-tractor-parts/](https://maazz0.github.io/auto-tractor-parts/)
+🔗 **Live Site:** [https://maaznpc.github.io/auto-tractor-parts/](https://maaznpc.github.io/auto-tractor-parts/)
 
 ---
 
